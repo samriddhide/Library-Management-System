@@ -1,0 +1,10 @@
+.library{
+    padding-bottom: 30px;
+}
+
+.content-text{
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 30px;
+    font-size: 25px;
+}

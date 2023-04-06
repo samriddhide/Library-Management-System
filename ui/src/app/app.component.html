@@ -1,0 +1,40 @@
+<!-- header of the page -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col cm-12">
+            <header>
+                <ul>
+                    <li class="headings">Library Management System</li>
+                    <!--navigates to likedin page on clicking contact button-->
+                    <li id="contact"><a href="https://www.linkedin.com/in/samriddhide/">Contact</a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+      
+    </div>
+    <!-- side navigation -->
+    <div class="wrapper">
+        <div class="col-sm-2 " id="sidebar">
+            <p><li><img class="bookicon"
+                    src="/assets/images/book-icon.png" alt="logo">
+            </li></p>
+            <ul class="options">
+                <li ><a href=""><img src="/assets/images/home-icon.png" alt="icon"> Home</a></li>
+                <li><a href="http://localhost:4200/admin"><img src="/assets/images/admin-icon.png" alt="icon"> Admin</a></li>
+                <li><a href="http://localhost:4200/students"><img src="/assets/images/student-icon.png" alt="icon"> Students</a></li>
+                <li><a href="http://localhost:4200/books"><img src="/assets/images/books-icon.png" alt="icon"> Books</a></li>
+                <li><a href="http://localhost:4200/authors"><img src="/assets/images/author-icon.png" alt="icon"> Authors</a></li>
+                <li><a href="http://localhost:4200/publishers"><img src="/assets/images/publisher-icon.png" alt="icon"> Publishers</a></li>
+                <li><a href="http://localhost:4200/loans"><img src="/assets/images/loan-icon.png" alt="icon"> Loans</a></li>
+            </ul>
+        </div>
+        <!-- contents -->
+        <div class="col-sm-9" id="content">
+            <router-outlet></router-outlet>
+        </div>
+</div>
+
+
+
+

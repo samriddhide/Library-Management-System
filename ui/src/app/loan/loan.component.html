@@ -1,0 +1,33 @@
+<h1 >{{title}}</h1>
+
+<h2 *ngIf="loans.length<1">No Data</h2>
+<div style="margin: 20px; float:right">
+    <button class="button" (click)="addLoan()"> Add Loan</button>
+</div>
+<table class="table table-bordered table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Book Id</th>
+            <th>Student Id</th>
+            <th>Check-out Date</th>
+            <th>Due Date</th>
+            <th>Return Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="loans.length > 0">
+        <tr *ngFor="let loan of loans">
+            <td>{{loan.id}}</td>
+            <td>{{loan.bookId}}</td>
+            <td>{{loan.studentId}}</td>
+            <td>{{loan.checkoutDate}}</td>
+            <td>{{loan.dueDate }}</td>
+            <td>{{loan.returnDate}}</td>
+            <td>
+                <button class="button-delete" (click)="deleteLoan(loan.id)">Delete</button>
+                <button class="button-update" (click)="updateLoan(loan.id)">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

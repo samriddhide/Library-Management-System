@@ -1,0 +1,35 @@
+<h1>{{title}}</h1>
+
+<h2 *ngIf="students.length<1">No Data</h2>
+<div style="margin: 20px; float:right">
+    <button class="button" (click)="addStudent()"> Add Student</button>
+</div>
+<table class="table table-bordered table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Roll number</th>
+            <th>Birthdate</th>
+            <th>Mobile number</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody *ngIf="students.length > 0">
+        <tr *ngFor="let student of students">
+            <td>{{student.id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.department}}</td>
+            <td>{{student.rollNumber}}</td>
+            <td>{{student.birthDate }}</td>
+            <td>{{student.mobileNumber}}</td>
+            <td>
+                <button class="button-delete" (click)="deleteStudent(student.id)">Delete</button>
+                <button class="button-update" (click)="updateStudent(student.id)">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+

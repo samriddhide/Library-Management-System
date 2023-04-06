@@ -1,0 +1,25 @@
+<div style="padding-left: 100px;">
+    <h1>Add Admin</h1>
+
+    <form [formGroup]="adminForm" (ngSubmit)="saveAdmin()">
+        <!--<label>Admin id</label>
+        <input type="number" formControlName="adminid">-->
+
+        <label>Admin Name</label>
+        <input type="text" formControlName="name" >
+
+        <label>Username</label>
+        <input type="text" formControlName="username" >
+
+        <label>Password</label>
+        <input type="text" formControlName="password" >
+
+        <div *ngIf="adminForm.valid">
+            <input class="submit-button" type="submit" value="Save admin">
+        </div>
+
+    </form>
+</div>
+
+<!-- <h3>Form status : {{adminForm.valid}}</h3>
+<h3>Form json : {{adminForm.value | json}}</h3> -->
