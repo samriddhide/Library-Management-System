@@ -41,7 +41,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ![add-page](https://user-images.githubusercontent.com/100946305/230638596-ccc36fa5-0807-48f0-be22-58aba6c7bddb.PNG)
 
-4. Updating data (requires to give the respective id for a successful idendification and updation)
+4. Updating data (requires to give the respective id for a successful identification and updation)
 
 ![update-data-page](https://user-images.githubusercontent.com/100946305/230638713-b6adcd5a-5d4c-4fff-9aba-5827b5d0c0b3.PNG)
 
